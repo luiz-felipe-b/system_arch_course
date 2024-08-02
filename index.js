@@ -52,3 +52,26 @@ console.log(1 == [1]); //true
 console.log(null == null); //true
 console.log(null == undefined); //true
 // portanto, NUNCA USAR o "=="
+
+//vetores
+var v1 = [];
+console.log(v1.length); // 0
+v1[0] = 3.4;
+console.log(v1.length); // 1
+v1[10] = "abc";
+console.log(v1.length); // 11
+v2 = [2, "abc", true];
+console.log(v2);
+for (let i = 0; i < v2.length; i++) {
+    console.log(v2[i]);
+}
+// vetor constante
+const v3 = [1, 2, 3];
+console.log(v3);
+v3.push(4);
+// passa por conta do fato que quando uma variável é constante, quer dizer que não podemos mudar o objeto apontado pela variável
+console.log(v3);
+v3 = [1, 2, 3];
+// não passa por conta do 
+console.log(v3);
+
